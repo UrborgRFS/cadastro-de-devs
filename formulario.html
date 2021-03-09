@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Devs</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./cadastroModel.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="container">
+
+        <section>
+            <h1>Sejam <br>muito bem-vindos <br> ao Cadastro de Devs!</h1>
+
+            <img src="./src/undraw_Online_messaging_re_qft3.svg" alt="Illustração">
+        </section>
+        
+        <form for="formulario" class="formulario">   
+        <header>
+            <h2 id="title">Cadastre-se</h1>
+            <p id="sub-title">Complete suas informações</p>
+        </header>
+            <fieldset class="group">
+                <div class="campo">
+                    <label>Nome</label> <br>
+                    <input type="text" name="nome" id="nome" placeholder="Nome"> <br>
+                    <label>Sobrenome</label><br>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                </div>
+            </fieldset>
+    
+            <div class="group">
+                <label>E-mail</label><br>
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+            </div>
+    
+            <div class="group">
+                <label>De qual lado da aplicação você desenvolva:</label><br>
+            <label for="">
+                <input type="radio" name="devweb" value="Frontend">
+                Front-End
+            </label>
+            <label for="">
+                <input type="radio" name="devweb" value="Frontend">
+                Back-end
+            </label>
+            <label for="">
+                <input type="radio" name="devweb" value="Frontend">
+                Back-end
+            </label>
+        </div>
+        <div class="group">
+            <label>Seneoridade</label>
+            <select id="seneoridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+    
+        <fieldset class="group">
+            <div>
+                <label>Selecione as tecnologias que utiliza:</label><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                <label for="tecnologia3">Javascript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia4">PHP</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for="tecnologia5">C#</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                <label for="tecnologia6">Python</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                <label for="tecnologia7">Java</label>
+            </div>
+        </fieldset>
+        <div class="group">
+            <label>Conte um pouco da sua experiência</label><br>
+            <textarea id="experiencia" name="experiencia" placeholder="Mensagem"></textarea>
+        </div>
+        <button for="formulario "class="btn btn-primary" data-toggle="modal" data-target="#modal-mensagem">
+            Concluído
+            </button>
+        </form>
+    </div>
+    <div class="modal fade" id="modal-mensagem">
+        <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                     <h4 class="modal-title">Parabéns pelo seu cadastro! </h4>
+                 </div>
+                 <div class="container modal-body">
+                     <img src="./src/undraw_winners_ao2o.svg" alt="Winners">
+                     <p>Estamos quase lá, agora vamos te mandar todas as instruções pelo teu
+                         e-mail.
+                     </p>
+                 </div>
+                 <div class="modal-footer">
+                     <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+    
+    <script src="./fecharModal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
